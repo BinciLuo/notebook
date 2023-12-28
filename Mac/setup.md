@@ -30,5 +30,4 @@
 </dict>
 </plist>
 ```
-3. ```launchctl load /Library/LaunchAgents/${SERVICE_NAME}.plist
-```
+3. ```launchctl load /Library/LaunchAgents/${SERVICE_NAME}.plist```
