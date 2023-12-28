@@ -8,7 +8,9 @@
 ### Operations
 - ```launchctl stop ${SERVICE_NAME}``` 
 - ```launchctl start ${SERVICE_NAME}```
+- ```launchctl remove ${SERVICE_NAME}```
 - ```launchctl load /Library/LaunchAgents/${SERVICE_NAME}.plist```(for all user)
+- ```launchctl unload /Library/LaunchAgents/${SERVICE_NAME}.plist```
 ### Create a service
 1. ```cd /Library/LaunchAgents/```
 2. ```sudo vim ${SERVICE_NAME}.plist``` and insert:
@@ -31,3 +33,13 @@
 </plist>
 ```
 3. ```launchctl load /Library/LaunchAgents/${SERVICE_NAME}.plist```
+
+## crontab
+### Operations
+- `crontab -l` to show all tasks
+- `crontab -e` to edit
+### Notice
+- If failed to exec, check your mail
+- No environment variable, add `. ~/.zshrc` before
+- Use absolute path of execable file
+- Don't read file in Desktop
