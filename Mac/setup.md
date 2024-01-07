@@ -42,4 +42,4 @@
 - If failed to exec, check your mail
 - No environment variable, add `. ~/.zshrc` before
 - Use absolute path of execable file
-- Don't read file in Desktop
+- **Don't read file in Desktop**
