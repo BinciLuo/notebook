@@ -1,0 +1,38 @@
+serverAddr = "59.110.7.2"
+serverPort = 7000
+transport.protocol = "kcp"
+
+[[proxies]]
+name = "ssh"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 22
+remotePort = 6002
+
+[[proxies]]
+name = "code-server"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8080
+remotePort = 28080
+
+[[proxies]]
+name = "multimodal"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 27777
+remotePort = 27777
+
+[[proxies]]
+name = "multimodal-udp"
+type = "udp"
+localIP = "127.0.0.1"
+localPort = 27777
+remotePort = 27777
+
+[[proxies]]
+name = "vnc"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 5900
+remotePort = 25900
